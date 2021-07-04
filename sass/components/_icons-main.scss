@@ -1,0 +1,52 @@
+.icons-button {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+  stroke: #000000;
+  stroke-width: 3px;
+}
+
+.advantage__icons {
+  & {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.team__icons-social {
+  display: flex;
+  // flex-direction: row;
+  width: 20px;
+  height: 20px;
+  color: var(--icon-color);
+}
+
+.icons-client {
+  width: 106px;
+  height: 60px;
+}
+
+.modal-svg {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 3%;
+  fill: inherit;
+}
+
+.modal-name {
+  width: 12px;
+  height: 12px;
+}
+
+.modal-tel {
+  width: 13px;
+  height: 13px;
+}
+.modal-email {
+  width: 15px;
+  height: 12px;
+}

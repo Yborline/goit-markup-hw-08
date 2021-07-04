@@ -1,0 +1,227 @@
+.backdrop {
+  position: fixed;
+  transition: background-color 500ms linear, transform 500ms ease-in-out;
+  top: 0;
+  left: 0;
+  transform: translate(0);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--solid-button);
+  z-index: 4;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 528px;
+  width: 100%;
+  max-height: 581px;
+  height: 100%;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  animation-name: button-hero;
+}
+
+[data-modal-close] {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid var(--solid-button);
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--main-text-color);
+}
+.is-hidden {
+  transform: translate(-100%, -100%);
+}
+.close-but {
+  padding: 3px 3px 4px 4px;
+}
+
+.modal-form-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 3%;
+  margin-bottom: 10px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  height: 448px;
+}
+
+.modal-form-input {
+  width: 100%;
+  border-radius: 4px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 42px;
+  outline: none;
+}
+.modal-form-input:focus {
+  border-color: var(--blue-color);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  background-color: var(--hero-color);
+  fill: var(--blue-color);
+  stroke: var(--blue-color);
+}
+
+/* .icon-position:focus {
+  fill: var(--blue-color);
+  stroke: var(--blue-color);
+} */
+
+/* ВТоростипенные стили  */
+/* .modal-form-input:required:valid {
+  border-color: green;
+}
+
+.modal-form-input:required:invalid {
+  border-color: red;
+} */
+/* ВТоростипенные стили  */
+
+.form-field {
+  font-size: 12px;
+  line-height: 1.167;
+  text-align: left;
+  letter-spacing: 0.01em;
+  color: var(--tell-color);
+  /* padding-top: 10px; */
+  margin-bottom: 10px;
+}
+
+.icon-position {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+
+.modal-form-icon {
+  fill: var(--main-text-color);
+}
+.modal-form-input::placeholder {
+  color: var(--form-text);
+}
+
+.modal-form-text {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-size: 14px;
+  line-height: 1.142;
+  outline: none;
+}
+.modal-form-text:focus {
+  border-color: var(--blue-color);
+}
+
+.modal-form-text::placeholder {
+  color: var(--form-text);
+}
+
+.form-field-txt {
+  font-size: 12px;
+  line-height: 1.167;
+  text-align: left;
+  letter-spacing: 0.01em;
+  color: var(--tell-color);
+}
+.modal-form-check {
+  border-color: #212121;
+}
+
+.modal-form-check::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 9px;
+  vertical-align: middle;
+  display: flex;
+  align-items: baseline;
+}
+
+.form-check:checked + .modal-form-check::before {
+  content: url("../images/vector-galka.png");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-color: var(--blue-color);
+  background-color: var(--blue-color);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 0 !important;
+  clip: rect(0 0 0 0);
+}
+.form-check {
+  display: flex;
+}
+
+.modal-form-check {
+  display: flex;
+  align-items: center;
+  align-self: auto;
+  font-size: 14px;
+  line-height: 1.714;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form-link {
+  color: var(--blue-color);
+  text-decoration: underline;
+  padding-left: 3px;
+}
+/* Модальное окно  */
+
+/* Кнопка Модалки  */
+
+.button-color-form {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+/* Кнопка Модалки  */

@@ -1,0 +1,8 @@
+@keyframes button-hero {
+  0% {
+    transition: none;
+  }
+  100% {
+    transition: background-color 500ms linear, transform 500ms ease-in-out;
+  }
+}

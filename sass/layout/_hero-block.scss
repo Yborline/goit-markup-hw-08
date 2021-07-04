@@ -1,0 +1,27 @@
+.hero {
+  &.container {
+    padding: 200px 452px;
+    width: 1600px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-image: linear-gradient(
+        to top,
+        rgba(130, 67, 247, 0.068),
+        rgba(138, 125, 4, 0.068)
+      ),
+      url(../images/background.png);
+    background-size: cover;
+    &__title {
+      color: var(--white-color);
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.363;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      width: 696px;
+      margin-bottom: 30px;
+    }
+  }
+}

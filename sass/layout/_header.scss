@@ -1,0 +1,148 @@
+.nav__site {
+  &.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.nav__studio {
+  &::after {
+    content: "";
+    height: 4px;
+    background-color: var(--blue-color);
+    align-self: flex-end;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 41px;
+    width: 49px;
+  }
+}
+
+.nav__portfolio {
+  &::after {
+    content: "";
+    height: 4px;
+    background-color: var(--blue-color);
+    align-self: flex-end;
+    border-radius: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 41px;
+    width: 76px;
+  }
+}
+
+.nav {
+  &__tell-tell,
+  &__mail-mail {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.nav__list-tell {
+  align-items: baseline;
+  justify-content: start;
+  color: var(--tell-color);
+}
+
+.nav__contact-nav {
+  &.nav__list-tell:hover,
+  &.nav__link:hover {
+    stroke: var(--blue-color);
+    color: var(--blue-color);
+    fill: var(--blue-color);
+    transition: var(--animation-hover);
+  }
+}
+
+.navigation {
+  &.container {
+    display: flex;
+    align-items: baseline;
+    &.nav {
+      display: flex;
+      width: 1025px;
+      justify-content: space-between;
+      & {
+        background-color: var(--white-color);
+        border: 1px solid var(--stroke-color);
+      }
+    }
+  }
+}
+.nav {
+  &__site {
+    display: flex;
+    width: 294px;
+    justify-content: space-between;
+    margin-left: 93px;
+    position: relative;
+  }
+}
+.nav__contact-nav {
+  & {
+    display: flex;
+    height: 16px;
+    &li:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}
+
+/* .logo-header {
+  color: var(--black-color);
+} */
+/* .logo {
+  font-family: Raleway;
+  color: var(--blue-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  padding: 24px 0px 25px;
+} */
+.nav__site .nav__link {
+  & {
+    :hover,
+    :focus,
+    :active {
+      color: var(--blue-color);
+      transition: var(--animation-hover);
+    }
+  }
+}
+
+.nav {
+  &.portfolio:visited,
+  &.nav__studio:visited {
+    color: var(--blue-color);
+    transition: var(--animation-hover);
+  }
+}
+
+.nav__contact-nav .link {
+  &:hover,
+  :focus {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+    transition: var(--animation-hover);
+  }
+}
+
+.nav__contact-nav {
+  a {
+    color: var(--tell-color);
+    transition: var(--animation-hover);
+  }
+}
+.navigation {
+  .nav__list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+  }
+}

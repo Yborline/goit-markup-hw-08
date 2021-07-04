@@ -1,0 +1,30 @@
+.nav__logo-header {
+  color: var(--black-color);
+}
+.navigation__logo {
+  font-family: Raleway;
+  color: var(--blue-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  padding: 24px 0px 25px;
+}
+.footer__logo-footer {
+  color: var(--white-color);
+}
+
+.footer {
+  &__logo {
+    font-family: Raleway;
+    color: var(--blue-color);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    padding: 24px 0px 25px;
+    &__logo-footer {
+      color: var(--white-color);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.social {
+  &__icons-footer {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+.sub {
+  &__telega-svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white-color);
+    margin-left: 10px;
+  }
+}
