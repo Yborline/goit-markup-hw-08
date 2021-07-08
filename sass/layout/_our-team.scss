@@ -1,25 +1,29 @@
 .team__icons-social {
   width: 20px;
   height: 20px;
-  color: var(--icon-color);
+  color: $icon-color;
 }
 .team__list-people {
   & a {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     width: 44px;
     height: 44px;
     border-radius: 50%;
     padding: 12px;
     flex-direction: row;
-    color: var(--icon-color);
+    color: $icon-color;
   }
   & {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding-bottom: 30px;
   }
 }
+// .team__list {
+//   & li:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
 
 .team__list-people {
   & li:not(:last-child) {
@@ -29,9 +33,9 @@
 .team__list-people a {
   &:hover,
   :focus {
-    fill: var(--white-color);
-    background-color: var(--blue-color);
-    transition: var(--animation-hover);
+    fill: $white-color;
+    background-color: $blue-color;
+    transition: $animation-hover;
   }
 }
 
@@ -39,74 +43,60 @@
   &__social-link {
     fill: currentColor;
   }
-  & {
-    padding: 60px 0px;
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-  }
 }
+//   &.container {
+//     padding: 94px 0px 93px;
+//   }
+// }
 
 /* Icon  */
 
 .team__list {
   & {
-    // display: flex;
+    display: flex;
     justify-content: space-between;
     align-content: center;
-    // flex-direction: column;
-    margin-bottom: -30px;
-    width: 100%;
     @media screen and (min-width: 480px) {
       display: flex;
       flex-wrap: wrap;
       margin-left: -30px;
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: unset;
     }
     @media screen and (min-width: 1200px) {
     }
   }
-}
-.team__list {
-  &.team__people {
-    background-color: var(--white-color);
+  & > li {
+    background-color: $white-color;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    border: 1px solid;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 2px rgba(0, 0, 0, 0.2),
       0px 3px 1px rgba(0, 0, 0, 0.12);
     display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     align-items: center;
-    transition: var(--animation-hover);
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 120px) / 4);
-    margin-left: 30px;
+    transition: $animation-hover;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 2);
+      margin-left: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 120px) / 4);
+    }
   }
 }
 
 .team {
   & {
-    background-color: var(--portfolio-color);
-    transition: var(--animation-hover);
+    background-color: $portfolio-color;
+    transition: $animation-hover;
   }
   &__worker {
-    display: flex;
-    justify-content: center;
     font-weight: 500;
     font-size: 16px;
-    text-align: center;
+    /* text-align: center; */
     line-height: 1.188;
     padding: 30px 0px 10px;
     letter-spacing: 0.03em;
@@ -114,10 +104,134 @@
   &__profession {
     font-size: 16px;
     line-height: 1.188;
-    text-align: center;
+
     letter-spacing: 0.03em;
-    color: var(--tell-color);
+    color: $tell-color;
     padding: 10px 0px 16px;
     font-weight: normal;
   }
 }
+
+// .team__icons-social {
+//   width: 20px;
+//   height: 20px;
+//   color: $icon-color;
+// }
+// .team__list-people {
+//   & a {
+//     padding-bottom: 30px;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     padding: 12px;
+//     flex-direction: row;
+//     color: $icon-color;
+//   }
+//   & {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: row;
+//     padding-bottom: 30px;
+//   }
+// }
+
+// .team__list-people {
+//   & li:not(:last-child) {
+//     margin-right: 10px;
+//   }
+// }
+// .team__list-people a {
+//   &:hover,
+//   :focus {
+//     fill: $white-color;
+//     background-color: $blue-color;
+//     transition: $animation-hover;
+//   }
+// }
+
+// .team {
+//   &__social-link {
+//     fill: currentColor;
+//   }
+//   & {
+//     padding: 60px 0px;
+//     @media screen and (min-width: 1200px) {
+//       padding-top: 94px;
+//       padding-bottom: 94px;
+//     }
+//   }
+// }
+
+// /* Icon  */
+
+// .team__list {
+//   & {
+//     // display: flex;
+//     justify-content: space-between;
+//     align-content: center;
+//     // flex-direction: column;
+
+//     width: 100%;
+// @media screen and (min-width: 480px) {
+//   display: flex;
+//   flex-wrap: wrap;
+//   // margin-left: -30px;
+// }
+// @media screen and (min-width: 780px) {
+//   display: flex;
+//   flex-wrap: unset;
+// }
+//     @media screen and (min-width: 1200px) {
+//     }
+//   }
+// }
+// // .team__list {
+// .team__list .team__people {
+//   background-color: $white-color;
+//   border-bottom-right-radius: 4px;
+//   border-bottom-left-radius: 4px;
+//   border: 1px solid;
+//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 2px rgba(0, 0, 0, 0.2),
+//     0px 3px 1px rgba(0, 0, 0, 0.12);
+//   display: flex;
+//   // flex-direction: column;
+//   align-items: center;
+//   transition: $animation-hover;
+//   width: 100%;
+//   // margin-bottom: 30px;
+
+// @media screen and (min-width: 768px) {
+//   flex-basis: calc((100% - 60px) / 2);
+//   margin-left: 30px;
+// }
+// @media screen and (min-width: 1200px) {
+//   flex-basis: calc((100% - 120px) / 4);
+//   margin-left: 30px;
+//   }
+// }
+
+// .team {
+//   & {
+//     background-color: $portfolio-color;
+//     transition: $animation-hover;
+//   }
+//   &__worker {
+//     display: flex;
+//     justify-content: center;
+//     font-weight: 500;
+//     font-size: 16px;
+//     text-align: center;
+//     line-height: 1.188;
+//     padding: 30px 0px 10px;
+//     letter-spacing: 0.03em;
+//   }
+//   &__profession {
+//     font-size: 16px;
+//     line-height: 1.188;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $tell-color;
+//     padding: 10px 0px 16px;
+//     font-weight: normal;
+//   }
+// }

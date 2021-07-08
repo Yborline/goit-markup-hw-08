@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--white-color);
-  color: var(--main-text-color);
+  background-color: $white-color;
+  color: $main-text-color;
 }
 
 .block-tittle {

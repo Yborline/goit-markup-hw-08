@@ -6,7 +6,7 @@
   transform: translate(0);
   width: 100vw;
   height: 100vh;
-  background-color: var(--solid-button);
+  background-color: $solid-button;
   z-index: 4;
 }
 
@@ -34,10 +34,10 @@
   right: 5px;
   border-radius: 20px;
   background-color: transparent;
-  border: 1px solid var(--solid-button);
+  border: 1px solid $solid-button;
   font-weight: bold;
   cursor: pointer;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 .is-hidden {
   transform: translate(-100%, -100%);
@@ -70,13 +70,13 @@
   outline: none;
 }
 .modal-form-input:focus {
-  border-color: var(--blue-color);
+  border-color: $blue-color;
 }
 
 .modal-form-input:focus + .modal-form-icon {
-  background-color: var(--hero-color);
-  fill: var(--blue-color);
-  stroke: var(--blue-color);
+  background-color: $hero-color;
+  fill: $blue-color;
+  stroke: $blue-color;
 }
 
 /* .icon-position:focus {
@@ -99,7 +99,7 @@
   line-height: 1.167;
   text-align: left;
   letter-spacing: 0.01em;
-  color: var(--tell-color);
+  color: $tell-color;
   /* padding-top: 10px; */
   margin-bottom: 10px;
 }
@@ -111,10 +111,10 @@
 }
 
 .modal-form-icon {
-  fill: var(--main-text-color);
+  fill: $main-text-color;
 }
 .modal-form-input::placeholder {
-  color: var(--form-text);
+  color: $form-text;
 }
 
 .modal-form-text {
@@ -131,11 +131,11 @@
   outline: none;
 }
 .modal-form-text:focus {
-  border-color: var(--blue-color);
+  border-color: $blue-color;
 }
 
 .modal-form-text::placeholder {
-  color: var(--form-text);
+  color: $form-text;
 }
 
 .form-field-txt {
@@ -143,7 +143,7 @@
   line-height: 1.167;
   text-align: left;
   letter-spacing: 0.01em;
-  color: var(--tell-color);
+  color: $tell-color;
 }
 .modal-form-check {
   border-color: #212121;
@@ -153,7 +153,7 @@
   content: "";
   width: 16px;
   height: 15px;
-  border: 2px solid var(--main-text-color);
+  border: 2px solid $main-text-color;
   display: inline-block;
   border-radius: 3px;
   margin-right: 9px;
@@ -169,8 +169,8 @@
   align-items: center;
   justify-content: center;
   align-self: center;
-  border-color: var(--blue-color);
-  background-color: var(--blue-color);
+  border-color: $blue-color;
+  background-color: $blue-color;
 }
 
 .visually-hidden {
@@ -198,7 +198,7 @@
 }
 
 .form-link {
-  color: var(--blue-color);
+  color: $blue-color;
   text-decoration: underline;
   padding-left: 3px;
 }
@@ -213,8 +213,8 @@
   width: 200px;
   height: 50px;
   font-family: "Roboto", sans-serif;
-  background-color: var(--blue-color);
-  color: var(--white-color);
+  background-color: $blue-color;
+  color: $white-color;
   font-size: 16px;
   line-height: 1.875;
   font-weight: 700;

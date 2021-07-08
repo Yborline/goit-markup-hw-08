@@ -603,7 +603,7 @@ body {
 .footer .container {
   padding: 60px 15px;
   align-items: baseline;
-  justify-content: first baseline;
+  justify-content: baseline;
 }
 
 .footer__address :not(:last-child) {

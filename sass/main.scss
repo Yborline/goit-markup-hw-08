@@ -3,7 +3,9 @@
 
 @import "./base/container";
 @import "./base/common";
+@import "./layout/portfolio";
 @import "./components/logo";
+@import "./layout/header";
 @import "./components/buttons";
 @import "./components/icons-header";
 @import "./components/icons-footer";
@@ -13,7 +15,6 @@
 @import "./components/animation";
 @import "./components/modal-js";
 @import "./components/text";
-@import "./layout/header";
 @import "./layout/hero-block";
 @import "./layout/indentation";
 @import "./layout/work";
