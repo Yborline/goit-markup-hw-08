@@ -502,6 +502,18 @@ body {
   align-items: baseline;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation .container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .container {
+    display: flex;
+  }
+}
+
 .navigation .nav {
   display: flex;
   width: 1025px;
@@ -1027,7 +1039,7 @@ body {
 
 .hero .container {
   padding: 200px 452px;
-  width: 1600px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -1089,7 +1101,7 @@ body {
   }
 }
 
-.advantage__list > li.container {
+.advantage__list.container {
   display: flex;
   padding: 94px 0px;
   justify-content: space-between;

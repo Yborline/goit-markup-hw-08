@@ -28,12 +28,12 @@
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 120px) / 4);
     }
-    &.container {
-      display: flex;
-      padding: 94px 0px;
-      justify-content: space-between;
-      margin-bottom: -30px;
-    }
+  }
+  &.container {
+    display: flex;
+    padding: 94px 0px;
+    justify-content: space-between;
+    margin-bottom: -30px;
   }
 }
 
