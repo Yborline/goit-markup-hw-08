@@ -3,7 +3,7 @@
 }
 
 .container .advantage__list {
-  padding: 60px 0px;
+  padding-bottom: 30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -11,12 +11,16 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    padding: 94px 0px;
+    padding-top: 94px;
   }
 }
 
 // justify-content: space-between;
 .advantage__list {
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
   & > li {
     width: 100%;
     flex-direction: column;

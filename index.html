@@ -16,6 +16,9 @@
         <svg class="icons-button">
             <use href="./images/icons-list/sprite.svg.svg#icon-vector13"></use></svg>
 
+                    <svg class="close-button__menu">
+                        <use href="./images/icons-list/sprite.svg.svg#icon-close_24px"></use>
+                    </svg>
             
         <svg class="icons">
             <use href="./images/icons-list/sprite.svg.svg#icon-antenna"></use>
@@ -86,9 +89,13 @@
 
 <body>
     <!--Навигация сайта-->
-    <!-- <header>
+    <header>
         <nav class="navigation">
-        <div class="container">
+                <h1><a href="./index.html" lang="en" class="navigation__logo navigation__link">Web<span
+                            class="nav__logo-header">Studio</span></a></h1>
+
+
+        <!-- <div class="container">
             <h1><a href="./index.html" lang="en" class="navigation__logo navigation__link">Web<span class="nav__logo-header">Studio</span></a></h1>
            <div class="nav">
             <ul class="nav__site nav__list">
@@ -120,10 +127,66 @@
                          </ul>
                    
             </ul>
-            </div>
+            </div> -->
+            <button type="button" class="button__menu">
+                <svg class="icons-menu">
+                <use href="./images/icons-list/sprite.svg.svg#icon-menu_24px"></use>
+            </svg>
+        </button >
+    <div class="mobile-nav is-hidden">
+        <div class="container">
+<button type="button" class="button-close-menu"><svg class="close-button__menu">
+        <use href="./images/icons-list/sprite.svg.svg#icon-close_24px"></use>
+    </svg>
+</button>
+<nav>
+    <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link link">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">Контакты</a>
+        </li>
+    </ul>
+
+
+</nav>
+<div class="mobile-nav__bottom">
+<ul class="mobile-contacts list ">
+    <li class="mobile-contacts__item">
+        <a href="" class="mobile-contacts__link tell-contacts__link link">+38 096 111 11 11</a>
+    </li>
+    <li class="mobile-contacts__item">
+        <a href="" class="mobile-contacts__link link">info@devstudio.com</a>
+    </li>
+</ul>
+
+<ul class="mobile-media list">
+    <li class="mobile-media__item">
+        <a href="" class="mobile-media__link link">Instagram</a>
+    </li>
+    <li class="mobile-media__item">
+        <a href="" class="mobile-media__link link">Twitter</a>
+    </li>
+    <li class="mobile-media__item">
+        <a href="" class="mobile-media__link link">Facebook</a>
+    </li>
+    <li class="mobile-media__item">
+        <a href="" class="mobile-media__link link">LinkedIn</a>
+    </li>
+</ul>
+
+</div>
+
+
         </div>
+        
+       </div>
         </nav>
-    </header> -->
+    </header>
 
     <main>
         <!-- Заказ услуги -->
@@ -183,11 +246,11 @@
             <div class="container">
                <h2 class="block-tittle">Чем мы занимаемся</h2>
                 <ul class="work__list">
-                   <li class="work__background-img"><img src="images/img.jpg" class="work__img-list" alt="набор текста на планшете" >
+                   <li class="work__background-img"><img src="images/desctop/img.jpg" class="work__img-list" alt="набор текста на планшете" >
                 <p class="work__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p></li>
-                    <li class="work__background-img"><img src="images/box2.jpg" class="work__img-list" alt="nелефон и ноутбук" >
+                    <li class="work__background-img"><img src="images/desctop/box2.jpg" class="work__img-list" alt="nелефон и ноутбук" >
                 <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p></li>
-                    <li class="work__background-img"><img src="images/box3.jpg" class="work__img-list" alt="палитра цветов" >
+                    <li class="work__background-img"><img src="images/desctop/box3.jpg" class="work__img-list" alt="палитра цветов" >
                 <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                     </li>
                 </ul>  
@@ -199,7 +262,7 @@
             <h2 class="block-tittle">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__people">
-                    <img src="./images/human.jpg" alt="мужчина" width="100%">
+                    <img srcset="./images/desctop/human.jpg 1x, ./images/desctop/card-team12x.jpg 2x" src="./images/desctop/human.jpg" alt="мужчина" width="100%">
                     <h3 class="team__worker">Игорь Демьяненко</h3>
                     <p lang="en" class="team__profession">Product Designer</p>
                     <ul class="team__list-people">
@@ -235,7 +298,7 @@
                     </ul>
                 </li>
                 <li class="team__people">
-                    <img src="./images/human1.jpg" alt="девушка" width="100%">
+                    <img srcset="./images/desctop/human1.jpg 1x, ./images/desctop/card-team22x.jpg 2x" src="./images/desctop/human1.jpg" alt="девушка"  width="100%">
                     <h3 class="team__worker">Ольга Репина</h3>
                     <p lang="en" class="team__profession">Frontend Developer</p>
                                         <ul class="team__list-people">
@@ -271,7 +334,7 @@
                     </ul>
                 </li>
                 <li class="team__people">
-                    <img src="./images/human2.jpg" alt="мужчина смотрит вправо " width="100%">
+                    <img srcset="./images/desctop/human2.jpg 1x, ./images/desctop/card-team32x.jpg 2x" src="./images/desctop/human2.jpg" alt="мужчина смотрит вправо " width="100%" >
                     <h3 class="team__worker">Николай Тарасов</h3>
                     <p lang="en" class="team__profession">Marketing</p>
                                                         <ul class="team__list-people">
@@ -307,7 +370,7 @@
                     </ul>
                 </li>
                 <li class="team__people">
-                    <img src="./images/human3.jpg" alt="мужчина смотрит на нас" width="100%">
+                    <img srcset="./images/desctop/human3.jpg 1x, ./images/desctop/card-team42x.jpg 2x" src="./images/desctop/human3.jpg" alt="мужчина смотрит на нас" width="100%" >
                     <h3 class="team__worker">Михаил Ермаков</h3>
                     <p lang="en" class="team__profession">UI Designer</p>
                                         <ul class="team__list-people">
@@ -355,24 +418,24 @@
                         <use href="./images/icons-list/sprite.svg.svg#icon-client"></use>
                     </svg>
                 </li>
-                <li>
+                <li class="client">
                 <svg class="client__icons">
                     <use href="./images/icons-list/sprite.svg.svg#icon-client1"></use>
                 </svg>
             </li>
-                <li><svg class="client__icons">
+                <li class="client"><svg class="client__icons">
                     <use href="./images/icons-list/sprite.svg.svg#icon-client2"></use>
                 </svg>
             </li>
-                <li><svg class="client__icons">
+                <li class="client"><svg class="client__icons">
                     <use href="./images/icons-list/sprite.svg.svg#icon-client3"></use>
                 </svg>
             </li>
-                <li><svg class="client__icons">
+                <li class="client"><svg class="client__icons">
                     <use href="./images/icons-list/sprite.svg.svg#icon-client4"></use>
                 </svg>
             </li>
-                <li><svg class="client__icons">
+                <li class="client"><svg class="client__icons">
                     <use href="./images/icons-list/sprite.svg.svg#icon-client5"></use>
                 </svg>
             </li>
@@ -384,15 +447,16 @@
     <!-- </main> -->
 
     <!--подвал-->
-     <!-- <footer class="footer">
+     <footer class="footer">
         
          <div class="container">
-                 
+         <div class="tablet">
             <div class="footer__contact"> 
+
              <a href="#" lang="en" class="footer__link footer__logo">Web<span class="footer__logo-footer">Studio</span></a>
              <address class="footer__address">
                 <P class="address">г. Киев, пр-т Леси Украинки, 26</P>
-                <ul class="list">
+                <ul class="contact-list">
                     <li><a href="mailto:info@example.com" class="footer__link footer__contacts">info@example.com</a></li>
                     <li><a href="tel:+380991111111" class="footer__link footer__contacts">+38 099 111 11 11</a></li>
                 </ul>
@@ -435,6 +499,7 @@
                        
                       </ul>
             </div>
+            </div>
                 
              <div class="sub">
                         <p class="sub__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
@@ -451,7 +516,7 @@
                         </form>
                         </div>
          </div>
-      </footer> -->
+      </footer>
 
       
     <div class="backdrop is-hidden" id="modal" data-modal>
@@ -511,5 +576,6 @@
     </div>
 
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
 </body>
 </html>
