@@ -566,9 +566,12 @@ body {
   height: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .navigation .container {
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
   }
 }
 
@@ -585,12 +588,6 @@ body {
   .navigation .container {
     padding-left: 0px;
     padding-right: 0px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .navigation .headder-tablet {
-    display: none;
   }
 }
 
@@ -697,6 +694,13 @@ body {
   .nav__contact-nav li:not(:first-child) {
     margin-left: 20px;
   }
+}
+
+.menu-burger-white {
+  display: block;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 48px 40px;
 }
 
 .logo-header {
