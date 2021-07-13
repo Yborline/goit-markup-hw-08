@@ -6,14 +6,18 @@
     font-size: 16px;
     line-height: 1.875;
     font-weight: 700;
-    text-align: center;
+
     border: 0;
     border-radius: 4px;
     padding: 10px 32px;
     cursor: pointer;
-    position: absolute;
-    top: 400px;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    // position: absolute;
+    // top: 400px;
+    // z-index: 1;
   }
 }
 
@@ -49,11 +53,17 @@
 .button-row__list {
   & {
     display: flex;
-    justify-content: center;
-    padding-bottom: 16px;
-    & li:not(:last-child) {
-      margin-right: 9px;
+    // justify-content: center;
+    flex-wrap: wrap;
+    @media screen and(min-width:768px) {
+      justify-content: center;
     }
+    padding-bottom: 16px;
+    padding-left: 15px;
+  }
+  & li:not(:last-child) {
+    margin-bottom: 15px;
+    margin-right: 9px;
   }
 }
 
