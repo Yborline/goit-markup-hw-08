@@ -4,6 +4,7 @@
   transform: translateY(0);
   opacity: 1;
   overflow: auto;
+  width: 100%;
 }
 
 // .card__container .card__background {
@@ -15,12 +16,17 @@
 //     overflow: auto;
 //   }
 // }
+// .card__container .img-position {
+
+// }
+
 .card {
   &__container {
+    border: 1px solid #eeeeee;
     // display: flex;
     position: relative;
-    // width: 370px;
-    height: 404px;
+    width: 100%;
+    height: 100%;
   }
   &__background {
     position: absolute;
@@ -28,7 +34,7 @@
     left: 0;
     width: 100%;
     height: 294px;
-    transform: translateY(60%);
+    transform: translateY(50%);
     background: rgba(33, 150, 243, 0.9);
     border: Solid rgba(33, 150, 243, 0.9);
     opacity: 0;
@@ -39,11 +45,11 @@
   &__text-background {
     font-family: Roboto;
     font-size: 18px;
-    line-height: 1.556px;
-    line-height: 133%;
+    line-height: 1.556;
+
     /* align: Left; */
     vertical-align: Top;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     color: $white-color;
     padding: 64px 23px;
   }
@@ -73,7 +79,7 @@
 .card__portfolio li {
   width: 100%;
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
@@ -94,6 +100,9 @@
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   &__pro-text {
     font-weight: 400;
@@ -101,6 +110,9 @@
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: $tell-color;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 
@@ -108,9 +120,9 @@
   &__text {
     z-index: 4;
   }
-  &__portfolio .card__text {
-    padding: 20px 24px;
-  }
+  // &__portfolio .card__text {
+  //   padding: 20px 24px;
+  // }
 }
 
 .nav__portfolio {

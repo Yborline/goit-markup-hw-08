@@ -336,11 +336,14 @@ body {
   transform: translateY(0);
   opacity: 1;
   overflow: auto;
+  width: 100%;
 }
 
 .card__container {
+  border: 1px solid #eeeeee;
   position: relative;
-  height: 404px;
+  width: 100%;
+  height: 100%;
 }
 
 .card__background {
@@ -349,7 +352,7 @@ body {
   left: 0;
   width: 100%;
   height: 294px;
-  transform: translateY(60%);
+  transform: translateY(50%);
   background: rgba(33, 150, 243, 0.9);
   border: Solid rgba(33, 150, 243, 0.9);
   opacity: 0;
@@ -358,11 +361,10 @@ body {
 .card__text-background {
   font-family: Roboto;
   font-size: 18px;
-  line-height: 1.556px;
-  line-height: 133%;
+  line-height: 1.556;
   /* align: Left; */
   vertical-align: Top;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   color: #ffffff;
   padding: 64px 23px;
 }
@@ -392,7 +394,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .card__portfolio li {
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -415,6 +417,9 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .card__pro-text {
@@ -423,14 +428,13 @@ body {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .card__text {
   z-index: 4;
-}
-
-.card__portfolio .card__text {
-  padding: 20px 24px;
 }
 
 .nav__portfolio::after {
@@ -1106,13 +1110,24 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 528px;
   width: 95%;
   padding: 40px;
   background-color: white;
   border-radius: 3px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
   animation-name: button-hero;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-content {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-content {
+    max-width: 528px;
+  }
 }
 
 [data-modal-close] {
@@ -1350,6 +1365,18 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(130, 67, 247, 0.068), rgba(138, 125, 4, 0.068)), url(../images/tablet/tabletback2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(130, 67, 247, 0.068), rgba(138, 125, 4, 0.068)), url(../images/desctop/background.png);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
@@ -1359,7 +1386,7 @@ body {
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 480px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), (min-resolution: 192dpi) and (min-width: 480px), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (min-width: 320px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), (min-resolution: 192dpi) and (min-width: 320px), (min-resolution: 2dppx) {
   .hero .hero {
     background-image: linear-gradient(to top, rgba(130, 67, 247, 0.068), rgba(138, 125, 4, 0.068)), url(../images/mobile/mobileback2x.jpg);
   }
@@ -1718,11 +1745,14 @@ body {
   transform: translateY(0);
   opacity: 1;
   overflow: auto;
+  width: 100%;
 }
 
 .card__container {
+  border: 1px solid #eeeeee;
   position: relative;
-  height: 404px;
+  width: 100%;
+  height: 100%;
 }
 
 .card__background {
@@ -1731,7 +1761,7 @@ body {
   left: 0;
   width: 100%;
   height: 294px;
-  transform: translateY(60%);
+  transform: translateY(50%);
   background: rgba(33, 150, 243, 0.9);
   border: Solid rgba(33, 150, 243, 0.9);
   opacity: 0;
@@ -1740,11 +1770,10 @@ body {
 .card__text-background {
   font-family: Roboto;
   font-size: 18px;
-  line-height: 1.556px;
-  line-height: 133%;
+  line-height: 1.556;
   /* align: Left; */
   vertical-align: Top;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   color: #ffffff;
   padding: 64px 23px;
 }
@@ -1774,7 +1803,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .card__portfolio li {
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -1797,6 +1826,9 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .card__pro-text {
@@ -1805,14 +1837,13 @@ body {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .card__text {
   z-index: 4;
-}
-
-.card__portfolio .card__text {
-  padding: 20px 24px;
 }
 
 .nav__portfolio::after {
